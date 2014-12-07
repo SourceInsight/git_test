@@ -58,7 +58,7 @@ void Scanner::accept()
 	case '.':
 		token_ = TOKEN_NUMBER;
 		char* p;
-		number_ = strtod(&buf_[curPos_], &p); // 二级指针做输出
+		number_ = strtod(&buf_[curPos_], &p); 
 		curPos_ = p - &buf_[0];
 		break;
 	case '\0': case '\n': case '\r': case EOF:
