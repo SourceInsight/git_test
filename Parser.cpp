@@ -68,7 +68,6 @@ Node* Parser::factor()
 		else
 		{
 			status_ = STATUS_ERROR;
-			// Todo:抛出异常
 			std::cout<<"missing parenthesis"<<std::endl;
 			node = 0;
 		}
@@ -86,7 +85,6 @@ Node* Parser::factor()
 	else
 	{
 		status_ = STATUS_ERROR;
-		// Todo:抛出异常
 		std::cout<<"not a valid expression"<<std::endl;
 		node = 0;
 	}
